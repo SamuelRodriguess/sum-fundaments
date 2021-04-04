@@ -1,6 +1,13 @@
-export function changeNumber(newNumber) {
+export function minNumber(newNumber) {
     return {
-        type: 'alterar numero',
+        type: 'numero minimo',
+        payload: newNumber
+    }
+}
+
+export function maxNumber(newNumber) {
+    return {
+        type: 'numero maximo',
         payload: newNumber
     }
 }
