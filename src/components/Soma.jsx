@@ -5,7 +5,7 @@ import Card from "./Card";
 import { connect } from "react-redux"; //ao state da aplicação
 
 const Soma = (props) => {
-  const { max, min } = props.numerosMaxMin;
+  const { max, min } = props.numbersMaxMin;
 
   return (
     <Card Title="Soma dos Números" Blue>
@@ -21,7 +21,7 @@ const Soma = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    numerosMaxMin: state.numeros,
+    numbersMaxMin: state.numeros,
   };
 };
 
