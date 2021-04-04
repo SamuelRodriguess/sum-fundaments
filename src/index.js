@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Provider} from 'react-redux'
+import {Provider} from 'react-redux' //vai fazer a integração entre react e redux na aplicação
 import configStore from './store/storeConfig'
 
-
-const store = configStore() //passando todos reducers
+//pode criar mais de um state!
+const store = configStore() //passando todos reducers do arquivo storeConfig
 
 ReactDOM.render(
   <Provider store={store}>
