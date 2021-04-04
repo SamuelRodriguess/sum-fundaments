@@ -1,13 +1,15 @@
-export function minNumber(newNumber) {
+import {NUMBER_MIN, NUMBER_MAX} from './TAction'
+
+export function minNumber(value) {
     return {
-        type: 'numero minimo',
-        payload: newNumber
+        type: NUMBER_MIN,
+        payload: value
     }
 }
 
-export function maxNumber(newNumber) {
+export function maxNumber(value) {
     return {
-        type: 'numero maximo',
-        payload: newNumber
+        type: NUMBER_MAX,
+        payload: value
     }
 }

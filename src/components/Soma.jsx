@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import "./Intervalo.css";
 import React from "react";
 import Card from "./Card";

@@ -1,18 +1,19 @@
-/* eslint-disable import/no-anonymous-default-export */
+import {NUMBER_MIN, NUMBER_MAX} from '../actions/TAction'
+
 const initialState = {
     min: 1,
     max: 9
 }
 
-export default function (state = initialState, action) {
+const numberReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "numero minimo":
+        case NUMBER_MIN:
             return {
                 ...state,
                 min: action.payload,
             };
 
-        case "numero maximo":
+        case NUMBER_MAX:
             return {
                 ...state,
                 max: action.payload,
@@ -22,3 +23,5 @@ export default function (state = initialState, action) {
             return state//current state
     }
 }
+
+export default numberReducer
